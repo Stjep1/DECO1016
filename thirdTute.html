@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VR UX</title>
+    <link rel="stylesheet" href="css/tuteStyle.css">
+  </head>
+  <body>
+    <!-- Starting with the top most image. So the class will be pimg, and inside there will be text with the class ptext -->
+    <div class="headerImage3">
+      <div class="ptext">
+        <span class="border">
+          Animation Cue Walkthrough
+        </span>
+      </div>
+    </div>
+
+    <!-- Now create a section -->
+    <section class="section section-light">
+      <h2>Instructions</h2>
+      <p>
+        This walkthrough will aim to teach you a very basic way to create an animation cue in Unity.
+        Simple primitives will again be used. We'll use the Comfort Range FOV that we created in
+        the first walkthrough as a base for positioning, and try to see if we can get a cube to
+        travel from the comfortable range guidelines, to beyond the maximum range lines for a
+        situation where our user need to turn their head to beyond their comfort zone.
+      </p>
+    </section>
+
+    <!-- Put in the next parallax image -->
+    <div class="img29">
+      <div class="ptext">
+      </div>
+    </div>
+
+  </body>
+</html>
+
+  <!-- Then, do the next section of text for this new parallax image -->
+  <section class="section section-dark">
+    <h2>Step 1</h2>
+    <p>
+      Open the Comfort Range file that you were working on in the first walkthrough, and
+      Save Scene As with the name 'AnimationCue.' We want to try to position ourselves just
+      behind the end of the green range lines so that we have a good view of the area we
+      should place our initial item. If you hold down your mouse wheel, you will be able
+      to drag the view to where you need it, and scrolling the mouse wheel will zoom in
+      and out of the scene.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img30">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- And again, put in the next section of writing to go with the image -->
+  <section class="section section-dark">
+    <h2>Step 2</h2>
+    <p>
+      Now lets create two items which will act like our starting and ending gaze targets,
+      and add materials to each. If you have any models you want to add to the scene, go
+      ahead, but for simplicity, and to solidify the concept we are using cubes.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img31">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 3</h2>
+    <p>
+      Jump into the top view and position the end cube so that its just out of the
+      maximum recommended comfort range which is 55 degrees, and to the right side of
+      the cube.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img32">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 4</h2>
+    <p>
+      Now lets exit top view and create another object. This time we'll choose a sphere
+      which will act as our motion cue. This cue will lead us from our pink starting
+      gaze to our yellow end gaze.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img33">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 5</h2>
+    <p>
+      Positional animation is a lot easy to visualise from the top view, so enter the
+      top view once more. Next, select your sphere and go to the Window tab at the top
+      of the page, and select Animation. A seperate window will pop up and ask you to
+      create a file name for your animation. Go ahead and do that now.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img34">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 6</h2>
+    <p>
+      For simplicity we will concentrate on one Transform property, the position. Press
+      the Add Property button, and then the triangle next to 'Transform.' From this
+      list, choose Position. When you do so you will see two little diamonds appear
+      on your timeline. They are your animation keys. If you press the triangle next to
+      'MotionCue:Position', you'll see that there are keyframes represented for all
+      three axis: x, y, and z.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img35">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 7</h2>
+    <p>
+      You'll see that at the 1 second mark, keyframes have been added to the timeline.
+      This is done by default. We want to make our animtion 2 seconds, so start by
+      deleting those keyframes. Then, with your mouse wheel, scroll to increase the
+      time of the animation.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img36">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 8</h2>
+    <p>
+      Let's start animating! The easiest way to move the object when animating is to
+      use the Transform arrows (blue,red, and green). Make sure your object is
+      selected, then press the keyframe button which is a small diamond, and 0
+      seconds. You'll notice that the diamond turns blue. Next, lets move our timeline,
+      which is a thin white vertical line, to the 2 minute mark.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img37">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 9</h2>
+    <p>
+      Now, move your object using the Transform arrows, to just to the right of the
+      yellow end gaze object. To input a new keyframe, press the 'Add Keyframe'
+      button which is the diamond with a small plus next to it. We can see on our
+      timeline that a keyframe has been added with our objects new position.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img38">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 10</h2>
+    <p>
+      Go back to 0 seconds by pressing the button to the left of Play. When we press
+      Play, we can see that our object travels in a diagonal line from the Starting
+      Gaze cube to the Ending Gaze cube. This is a simple animation to allow you to
+      understand the purpose of a motion cue for capturing attention in a 3D space.
+      <br/>
+      As a further challenge, try adding more motion cues to the scene. Additionally,
+      try changing the animation position, rotation, and scale, as the motion cue
+      travels from its starting location to the target.
+    </p>
+  </section>
+
+
+
+
+  <!-- To finalise the parallax process, you need to add the first image to the bottom of the last section -->
+  <div class="headerImage3">
+    <div class="ptext">
+      <a href="index.html">
+      <span class="border">
+        VR UX Principles
+      </span>
+      </a>
+    </div>
+
+    <a href="resources.html">
+      <div class="resBox">
+        <div class="resText">
+        Resources
+      </div>
+    </div>
+  </a>
+
+  </div>

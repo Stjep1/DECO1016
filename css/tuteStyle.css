@@ -1,0 +1,296 @@
+body, html {
+  height:100%;
+  margin:0;
+  font-size:20px;
+  font-family:"Lato",sans-serif;
+  font-weight:600;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+/* Add the scrolling effect to all images */
+.headerImage, .headerImage2, .headerImage3,
+.img1, .img2, .img3, .img4, .img5, .img6,
+.img7, .img8, .img9, .img10, .img11,
+.img12, .img13, .img14, .img15, .img16,
+.img17, .img18, .img19, .img20, .img21,
+.img22, .img23, .img24, .img25, .img26,
+.img27, .img28, .img29, .img30, .img31,
+.img32, .img33, .img34, .img35, .img36,
+.img37, .img38{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
+}
+
+.headerImage{
+  background-image:url('../imgTute1/header.jpg');
+  min-height:70%;
+}
+
+.img1{
+  background-image:url('../imgTute1/step1.jpg');
+  min-height:400px;
+}
+
+.img2{
+  background-image:url('../imgTute1/step2.jpg');
+  min-height:400px;
+}
+
+.img3{
+  background-image:url('../imgTute1/step3.jpg');
+  min-height:400px;
+}
+
+.img4{
+  background-image:url('../imgTute1/step4.jpg');
+  min-height:400px;
+}
+
+.img5{
+  background-image:url('../imgTute1/step5.jpg');
+  min-height:400px;
+}
+
+.img6{
+  background-image:url('../imgTute1/step6.jpg');
+  min-height:400px;
+}
+
+.img7{
+  background-image:url('../imgTute1/step7.jpg');
+  min-height:400px;
+}
+
+.img8{
+  background-image:url('../imgTute1/step8.jpg');
+  min-height:400px;
+}
+
+.img9{
+  background-image:url('../imgTute1/step9.jpg');
+  min-height:400px;
+}
+
+.img10{
+  background-image:url('../imgTute1/step10.jpg');
+  min-height:400px;
+}
+
+.img11{
+  background-image:url('../imgTute1/step11.jpg');
+  min-height:400px;
+}
+
+.img12{
+  background-image:url('../imgTute1/step12.jpg');
+  min-height:400px;
+}
+
+.img13{
+  background-image:url('../imgTute1/step13.jpg');
+  min-height:400px;
+}
+
+.img14{
+  background-image:url('../imgTute1/step14.jpg');
+  min-height:400px;
+}
+
+.img15{
+  background-image:url('../imgTute1/step15.jpg');
+  min-height:400px;
+}
+
+.img16{
+  background-image:url('../imgTute1/step16.jpg');
+  min-height:400px;
+}
+
+.img17{
+  background-image:url('../imgTute1/step17.jpg');
+  min-height:400px;
+}
+
+/* Below images are for second walkthrough */
+
+.headerImage2{
+  background-image:url('../imgTute2/header2.jpg');
+  min-height:70%;
+}
+
+.img18{
+  background-image:url('../imgTute2/step1.jpg');
+  min-height:400px;
+}
+
+.img19{
+  background-image:url('../imgTute2/step2.jpg');
+  min-height:400px;
+}
+
+.img20{
+  background-image:url('../imgTute2/step3.jpg');
+  min-height:400px;
+}
+
+.img21{
+  background-image:url('../imgTute2/step4.jpg');
+  min-height:400px;
+}
+
+.img22{
+  background-image:url('../imgTute2/step5.jpg');
+  min-height:400px;
+}
+
+.img23{
+  background-image:url('../imgTute2/step6.jpg');
+  min-height:400px;
+}
+
+.img24{
+  background-image:url('../imgTute2/step7.jpg');
+  min-height:400px;
+}
+
+.img25{
+  background-image:url('../imgTute2/step8.jpg');
+  min-height:400px;
+}
+
+.img26{
+  background-image:url('../imgTute2/step9.jpg');
+  min-height:400px;
+}
+
+.img27{
+  background-image:url('../imgTute2/step10.jpg');
+  min-height:400px;
+}
+
+.img28{
+  background-image:url('../imgTute2/step11.jpg');
+  min-height:400px;
+}
+
+/* Below image are for third walkthrough */
+
+.headerImage3{
+  background-image:url('../imgTute3/header3.jpg');
+  min-height:70%;
+}
+
+.img29{
+  background-image:url('../imgTute3/step1.jpg');
+  min-height:400px;
+}
+
+.img30{
+  background-image:url('../imgTute3/step2.jpg');
+  min-height:400px;
+}
+
+.img31{
+  background-image:url('../imgTute3/step3.jpg');
+  min-height:400px;
+}
+
+.img32{
+  background-image:url('../imgTute3/step4.jpg');
+  min-height:400px;
+}
+
+.img33{
+  background-image:url('../imgTute3/step5.jpg');
+  min-height:400px;
+}
+
+.img34{
+  background-image:url('../imgTute3/step6.jpg');
+  min-height:400px;
+}
+
+.img35{
+  background-image:url('../imgTute3/step7.jpg');
+  min-height:400px;
+}
+
+.img36{
+  background-image:url('../imgTute3/step8.jpg');
+  min-height:400px;
+}
+
+.img37{
+  background-image:url('../imgTute3/step9.jpg');
+  min-height:400px;
+}
+
+.img38{
+  background-image:url('../imgTute3/step10.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:20px 60px;
+}
+
+.section-light{
+  background-color:#36bfb7;
+  color:#ffffff;
+}
+
+.section-dark{
+  background-color:#36bfb7;
+  color:#ffffff;
+}
+
+
+/* Align the parallax image text */
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:28px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:10px;
+}
+
+.resBox {
+  width:300px;
+  height:50px;
+  padding:0px;
+  background-color:#111;
+  position:absolute;
+  left:770px;
+  bottom:500px;
+}
+
+.resText {
+  position:absolute;
+  top:10%;
+  width:100%;
+  text-align:center;
+  color:#ffffff;
+  font-size:30px;
+  font-family:"Lato",sans-serif;
+  font-weight:600;
+  line-height:1.2em;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}

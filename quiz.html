@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="quizStyle.css">
+    <script src="quiz.js"></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+
+    <div class="quizAll">
+      <div class="quizText">
+
+        <h1>VR UX Quiz</h1>
+
+
+
+        <form id="quiz" name="quiz">
+
+        <p>What is the upper viewing comfort angle?</p>
+        <input type="radio" id="mchoice" name="question1" value="15 Degrees">15 Degrees<br>
+        <input type="radio" id="mchoice" name="question1" value="20 Degrees">20 Degrees<br>
+        <input type="radio" id="mchoice" name="question1" value="25 Degrees">25 Degrees<br>
+        <input type="radio" id="mchoice" name="question1" value="22 Degrees">22 Degrees<br>
+
+        <p>What is the maximum upper viewing angle before strain?</p>
+        <input type="radio" id="mchoice" name="question2" value="55 Degrees">55 Degrees<br>
+        <input type="radio" id="mchoice" name="question2" value="60 Degrees">60 Degrees<br>
+        <input type="radio" id="mchoice" name="question2" value="62 Degrees">62 Degrees<br>
+        <input type="radio" id="mchoice" name="question2" value="50 Degrees">50 Degrees<br>
+
+        <p>When viewing down, what is the optimal comfort angle?</p>
+        <input type="radio" id="mchoice" name="question3" value="-15 Degrees">-15 Degrees<br>
+        <input type="radio" id="mchoice" name="question3" value="-12 Degrees">-12 Degrees<br>
+        <input type="radio" id="mchoice" name="question3" value="-20 Degrees">-20 Degrees<br>
+        <input type="radio" id="mchoice" name="question3" value="-9 Degrees">-9 Degrees<br>
+
+        <p>When viewing down, what is the maximum head angle before strain?</p>
+        <input type="radio" id="mchoice" name="question4" value="-36 Degrees">-36 Degrees<br>
+        <input type="radio" id="mchoice" name="question4" value="-39 Degrees">-39 Degrees<br>
+        <input type="radio" id="mchoice" name="question4" value="-42 Degrees">-42 Degrees<br>
+        <input type="radio" id="mchoice" name="question4" value="-40 Degrees">-40 Degrees<br>
+
+        <p>When a head turns right and left, what is the optimal comfort range?</p>
+        <input type="radio" id="mchoice" name="question5" value="+/-33 Degrees">+/-33 Degrees<br>
+        <input type="radio" id="mchoice" name="question5" value="+/-30 Degrees">+/-30 Degrees<br>
+        <input type="radio" id="mchoice" name="question5" value="+/-35 Degrees">+/-35 Degrees<br>
+        <input type="radio" id="mchoice" name="question5" value="+/-32 Degrees">+/-32 Degrees<br>
+
+        <p>When a head turns right and left, what is the maximum comfort angle before strain?</p>
+        <input type="radio" id="mchoice" name="question6" value="+/-55 Degrees">+/-55 Degrees<br>
+        <input type="radio" id="mchoice" name="question6" value="+/-57 Degrees">+/-57 Degrees<br>
+        <input type="radio" id="mchoice" name="question6" value="+/-50 Degrees">+/-50 Degrees<br>
+        <input type="radio" id="mchoice" name="question6" value="+/-54 Degrees">+/-54 Degrees<br>
+
+        <p>What is the name of the ideal action required to go from one web VR page to another?</p>
+        <input type="radio" id="mchoice" name="question7" value="Portal">Portal<br>
+        <input type="radio" id="mchoice" name="question7" value="Link">Link<br>
+        <input type="radio" id="mchoice" name="question7" value="Transition">Transition<br>
+        <input type="radio" id="mchoice" name="question7" value="Teleport">Teleport<br>
+
+        <p>What is the importance of animating in a medium between two scenes?</p>
+        <input type="radio" id="mchoice" name="question8" value="It joins the scenes without decreasing immersion">It joins the scenes without decreasing immersion<br>
+        <input type="radio" id="mchoice" name="question8" value="Its the only way to get from one scene to another">Its the only way to get from one scene to another<br>
+        <input type="radio" id="mchoice" name="question8" value="Its not important, it annoys the user">Its not important, it annoys the user<br>
+        <input type="radio" id="mchoice" name="question8" value="It acts as realtime feedback for the user">It acts as realtime feedback for the user<br>
+
+        <p>If a user is discovering a VR space and they are looking in the comfort range, how would you avert their gaze to an out-of-field location?</p>
+        <input type="radio" id="mchoice" name="question9" value="Bring up a UI interface and tell them where to look">Bring up a UI interface and tell them where to look<br>
+        <input type="radio" id="mchoice" name="question9" value="Change their FOV with teleportation">Change their FOV with teleportation<br>
+        <input type="radio" id="mchoice" name="question9" value="Use a motion cue">Use a motion cue<br>
+        <input type="radio" id="mchoice" name="question9" value="Their gaze should never be out of the comfort range">Their gaze should never be out of the comfort range<br>
+
+        <p>A user is enjoying an experience about urban transporation. To their right they hear the sound of
+           a jet aircraft. There is nothing in their comfort FOV, so they turn to their right and see a small
+           object in the distance. What technique has the VR UX designer used?</p>
+        <input type="radio" id="mchoice" name="question10" value="Transition">Transition<br>
+        <input type="radio" id="mchoice" name="question10" value="Projection">Projection<br>
+        <input type="radio" id="mchoice" name="question10" value="Contrast">Contrast<br>
+        <input type="radio" id="mchoice" name="question10" value="Motion Cue">Motion Cue<br>
+        <br/>
+        <input id="button" type="button" value="DONE!" onClick="checkAnswers();">
+
+        </form>
+      </div>
+    </div>
+
+    <div class="quizBox">
+    </div>
+
+    <div id="after_submit">
+      <p id="message"></p>
+      <p id="number_correct"></p>
+    </div>
+
+
+
+
+
+  </body>
+</html>

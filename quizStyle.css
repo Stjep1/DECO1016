@@ -1,0 +1,41 @@
+body, html {
+  height:100%;
+  background-color:#f7e384;
+}
+
+.quizAll{
+  margin:0 auto;
+  width:500px;
+}
+
+.quizText {
+  font-size:20px;
+  font-family:"Lato",sans-serif;
+  font-weight:600;
+  line-height:1.8em;
+  color:#666;
+}
+
+.quizBox {
+  width:600px;
+  height:2800px;
+  margin:0px auto;
+  background-color:#73d2ce;
+  position:relative;
+  bottom:2870px;
+  z-index:-1;
+
+
+
+}
+
+#after_submit {
+  visibility: hidden;
+  font-size:20px;
+  font-family:"Lato",sans-serif;
+  font-weight:600;
+  line-height:1.8em;
+  color:#666;
+  margin:0 auto;
+  width:500px;
+}

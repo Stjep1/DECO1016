@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VR UX</title>
+    <link rel="stylesheet" href="css/tuteStyle.css">
+  </head>
+  <body>
+    <!-- Starting with the top most image. So the class will be pimg, and inside there will be text with the class ptext -->
+    <div class="headerImage2">
+      <div class="ptext">
+        <span class="border">
+          3D Transition Basics Walktrough
+        </span>
+      </div>
+    </div>
+
+    <!-- Now create a section -->
+    <section class="section section-light">
+      <h2>Instructions</h2>
+      <p>
+        The purpose of this 3D Transition walkthrough is to introduce you, the designer who has worked predominately
+        with 2D transitional UX, to designing transitions in 3D. The tutorial will not focus on animation principles,
+        or 3D modelling, but rather it will give a higher-level look at what can be accomplished in a 3D space
+        using simple techniques.
+      </p>
+    </section>
+
+    <!-- Put in the next parallax image -->
+    <div class="img18">
+      <div class="ptext">
+      </div>
+    </div>
+
+  </body>
+</html>
+
+  <!-- Then, do the next section of text for this new parallax image -->
+  <section class="section section-dark">
+    <h2>Step 1</h2>
+    <p>
+      Let's start by creating a new Unity project, and then adding two cubes to the scene. Rename the cubes
+      'Scene 1' and 'Scene 2', and create materials for both. Zero out the positions for both cubes, then
+      select Scene 2, and change the X Position to -20. We now have a simple layout that shows us two worlds
+      or experiences. The space all around these two Scenes is the space we can work with to make an
+      immersive transition.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img19">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- And again, put in the next section of writing to go with the image -->
+  <section class="section section-dark">
+    <h2>Step 2</h2>
+    <p>
+      To make a simple animation, place in a Particle System which can be found in the Effects menu inside
+      GameObject. Rename this to 'Transition.'
+      <br/>
+      On the right side of the window, you will see the Particle System settings underneath the Transform
+      settings. We are going to manipulate some of these settings to create a simple 3D animation. Start
+      by looking at the settings in the 'Transition' tab.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img20">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 3</h2>
+    <p>
+      Let's start by changing the duration of the particle life from the default setting of 5.00, to 10.00,
+      and ticking the 'Prewarm' box. Next, we need to change the start life-time to 2.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img21">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 4</h2>
+    <p>
+      What we want to do now is change the mode of the particles Start Speed from 'Constant' to 'Random
+      Between Two Constants', and change the two values to 1 and 5.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img22">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 5</h2>
+    <p>
+      Next, we need to change the particle Start Size to 1, leave the colour as white, and increase the
+      Max Particle amount to 20000.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img23">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 6</h2>
+    <p>
+      Close the 'Transition' tab, and open the 'Emission' tab. We want to change the particles' Rate
+      over Time to 100, and add a Burst list by pressing on the small plus sign. In the Count box,
+      change the value to 10, and in the Cycles box, change the value to 5.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img24">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 7</h2>
+    <p>
+      Close the 'Emission' tab, and open up the 'Shape' tab. You can experiment with different shapes
+      the particle system mimics in this tab, but for the time being, lets change the Shape to 'Edge.'
+      We also want to increase the Radius from 1 to 17.89.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img25">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 8</h2>
+    <p>
+      We need to change the mode the particles move in from Random to Loop. This will allow them to
+      move along a fixed path. This can also be seen as a kind of 3D progress bar which is moving
+      forward in space.
+      <br/>
+      Increase the Speed to 3.83 to increase the sense of urgency, and change the Y Rotation value
+      to -180. We now have a simple animation that moves from Scene 1 to Scene 2 in a few seconds.
+      This animation doesn't encompass the entire space, and that's something that you, as the
+      designer will have to evaluate for your own given experience.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img26">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 9</h2>
+    <p>
+      To make the visuals slightly more appealing, lets add some colour by going down to the
+      'Color over Lifetime' tab. Here we are able to choose how many colours we want our particles
+      to experience over the course of their life. To pick our colour palette, double click on
+      the white colour bar to open the Gradient Editor.
+      <br/>
+      Here we can see four tabs, two on the top, and two on the bottom. The top two tabs control
+      the Alpha percentage, and the bottom two, the colour range. New tabs can also be created by
+      double clicking the space underneath the coloured bar.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img27">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 10</h2>
+    <p>
+      Finally, we want to make a few clean-up changes in the Render tab. Change the particle Sort
+      Mode to 'Young in Front', and decrease the Max Particle Size from 0.5 to 0.1.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img28">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 11</h2>
+    <p>
+      To view our transition in first person, we can add a camera from the GameObject menu. Make
+      sure you have zeroed out all the Position values, and then change the Y Rotation to -90. To
+      view our transition animation, press the Play button located at the top center of the window.
+      <br/>
+      We've now created a very basic render of how to start viewing and imagining transitions in
+      3D space. In this example a fireball moves from one point to another. However, 360 space
+      offers a world of opportunities for animation, and in particular trying to bridge the gap
+      between 2D and 3D affordances, as well as storytelling, and design for purpose.
+    </p>
+  </section>
+
+
+  <!-- To finalise the parallax process, you need to add the first image to the bottom of the last section -->
+  <div class="headerImage2">
+    <div class="ptext">
+      <a href="index.html">
+      <span class="border">
+        VR UX Principles
+      </span>
+      </a>
+    </div>
+
+    <a href="resources.html">
+      <div class="resBox">
+        <div class="resText">
+        Resources
+      </div>
+    </div>
+  </a>
+
+  </div>

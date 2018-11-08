@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VR UX</title>
+    <link rel="stylesheet" href="css/tuteStyle.css">
+  </head>
+  <body>
+    <!-- Starting with the top most image. So the class will be pimg, and inside there will be text with the class ptext -->
+    <div class="headerImage">
+      <div class="ptext">
+        <span class="border">
+          Comfort Range FOV Walktrough
+        </span>
+      </div>
+    </div>
+
+    <!-- Now create a section -->
+    <section class="section section-light">
+      <h2>Instructions</h2>
+      <p>
+        The goal of this walkthrough is to teach you how to build a very simple 3D framework for the Comfort Range Values
+        talked about earlier. Using Unity and simple primatives we will be able to visualise where these ranges are in
+        3D space from a first and third person perspective. The framework only needs to be built once, and can then
+        be used as a guide for future VR rapid prototyping.
+      </p>
+    </section>
+
+    <!-- Put in the next parallax image -->
+    <div class="img1">
+      <div class="ptext">
+      </div>
+    </div>
+
+  </body>
+</html>
+
+  <!-- Then, do the next section of text for this new parallax image -->
+  <section class="section section-dark">
+    <h2>Step 1</h2>
+    <p>
+      First we need to find a suitable grid to use as a guide inside Unity. For this example we'll use a 360 degree
+      polar grid which was taken from etc.usf.edu/clipart/43000/43030/polar_36-10l_43030.html However, you can also
+      look to Google Images for other circular grids.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img2">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- And again, put in the next section of writing to go with the image -->
+  <section class="section section-dark">
+    <h2>Step 2</h2>
+    <p>
+      Open up Unity, and create a new 3D Unity Project. Then head up into the GameObject menu and select 3D Object, then
+      Plane. To be able to put in our grids, we need to first put in a basic primative to attach them to. To reduce
+      clutter, we'll do this one at a time.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img3">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 3</h2>
+    <p>
+      Enter 2D mode by pressing the 2D button on the top-left of the Scene Widow. Working in 2D will allow for easier
+      allignment vertically.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img4">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 4</h2>
+    <p>
+      We want to orientate the plane so we can see it. To do this, change the rotation values under Transform in the
+      right hand column so that X is 90, Y is 90, and Z is -90. Now we can see the white plane facing us.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img5">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 5</h2>
+    <p>
+      We simply want to drag the grid image we downloaded before, and drop it into our Assets folder located at the botom
+      of the screen. To avoid distraction, turn off the camera tag in the Inspector window for the Main Camera.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img6">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 6</h2>
+    <p>
+      We want to keep the centre of the grid in mind when designing. First, lets make a base so that we know where 0
+      degrees is. Go back up to the GameObject menu and select a Cube from the 3D Object menu. The colour is white,
+      so lets change this to make viewing easier. Go down to the Assets folder, right click, and create a material.
+      <br/>
+      Name the material 'Base' and change the colour to black over on the right hand menu next to 'Albedo.' Now
+      drag and drop the material onto your cube so its black. Also rename the cube 'Level.'
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img7">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 7</h2>
+    <p>
+      Resize the shape of the cube to be a long thin line with your mouse by pressing the 'Rect tool' located
+      on the top left. Also reduce the Z scale to 0.2 so when we flip to 3D, the line isn't too wide.
+      <br/>
+      Alternatively, you can type dimensions into the scale boxes under the Transform property. Then position
+      the bar so that the grid line at 0 degrees sits in the middle of your cube with the 'Move tool.'
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img8">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 8</h2>
+    <p>
+      Its time to create the upper comfort ranges. The head motion that allows for comfortable movement is
+      20 degrees upwards from level. Duplicate the cube by pressing 'Crtl-D' and rename the cube to
+      'UP 20 Comfort.' Next, Create another material and call it 'Comfort.' Change this material to a bright
+      green, and place it on your new cube.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img9">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 9</h2>
+    <p>
+      Select the 'UP 20 Comfort' cube, and change the Z plane to 20 degrees in the Rotation tab below Transform.
+      Now with the arrows, line the cube up using the grid lines as a guide. We now have the upper comfortable
+      range.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img10">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 10</h2>
+    <p>
+      Duplicate the last item you created, and rename it to 'UP 60 MAX.' Apply a red material to it, and rename that
+      material to 'MAX.' Then select 'UP 60 MAX', and change the Z rotation to 60. Line the shape up with the grid as
+      before. You now have the maximum upper limit viewing range without straining the head.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img11">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 11</h2>
+    <p>
+      The comfortable downward movement for the head is -12 degrees, whilst the maximum downwards movement is -40
+      degrees before straining occurs. Create and align two cubes like before for this, and colour them with the
+      appropriate materials.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img12">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 12</h2>
+    <p>
+      We now want to create motion ranges for a head turning right and left. Lets start by placing another plane
+      into the scene, turning off 2D mode, and changing the x,y, and z values to 0 for the position. Now the
+      plane is centered. Then add the circle grid to the plane, and change the Y rotation to 180.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img13">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 13</h2>
+    <p>
+      Lets duplicate our 'Level' cube which is at 0 degrees, and drag it down under our second plane. And then we
+      want to duplicate this item one more time. Rename the first duplicate to 'Right 30 Comfort', and the second
+      duplicate to 'Left -30 Comfort.' Apply the Comfort material to both of these duplicates.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img14">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 14</h2>
+    <p>
+      Select Right 30 Comfort, and change the Y rotation to 30, and -30 for Left -30 Comfort. To avoid making errors
+      with aligning in the 3D view, press the 'Y' above the square in the top right hand corner of the scene. We are
+      now in the top view.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img15">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 15</h2>
+    <p>
+      We now move into making our final framework parameters which are the maximum ranges for right and left head
+      movements without strain. Start by duplicating both the Left and Right shapes, and renaming each to
+      Right 55 MAX, and Left -55 MAX. Apply the appropriate materials, and change the Y Rotation to 55 and -55
+      respectively.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img16">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 16</h2>
+    <p>
+      To clean up, lets create an empty object from the GameObject menu, and rename it to VR_Vision_Ranges. Then
+      put every item except the two planes, directional light, and camera, inside this new object. If we switch
+      off the planes by unchecking their boxes in the Inspector panel, we can see our framework in the scene
+      cleanly, and move it around where we need it. At this point, also exit the top view.
+    </p>
+  </section>
+
+  <!-- Now, we put in another parallax image -->
+  <div class="img17">
+    <div class="ptext">
+
+    </div>
+  </div>
+
+  <!-- Now create a section -->
+  <section class="section section-light">
+    <h2>Step 17</h2>
+    <p>
+      Finally, if we want a quick first person view, we can simply turn the camera tag back on in the inspector menu,
+      change the Position values to 0, and change the Y Rotation to 90. This provides us with a very quick and easy
+      way to build a comfort range test in 3D space, and we can use this is a base for placing content.
+    </p>
+  </section>
+
+
+  <!-- To finalise the parallax process, you need to add the first image to the bottom of the last section -->
+  <div class="headerImage">
+
+    <div class="ptext">
+      <a href="index.html">
+      <span class="border">
+        VR UX Principles
+      </span>
+      </a>
+    </div>
+
+
+    <a href="resources.html">
+      <div class="resBox">
+        <div class="resText">
+        Resources
+      </div>
+    </div>
+  </a>
+
+  </div>

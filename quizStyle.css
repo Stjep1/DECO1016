@@ -1,12 +1,12 @@
-body, html {
-  height:100%;
+body {
   background-color:#f7e384;
   margin: 0;
+  padding: 30px;
 }
 
 .quizText {
-  margin:30px auto;
-  width:500px;
+  margin:0 auto;
+  max-width:500px;
   padding: 30px;
   font-size:20px;
   font-family:"Lato",sans-serif;
@@ -27,25 +27,19 @@ body, html {
   font-weight:600;
   line-height:1.0em;
   color:#666;
-  margin:0 auto;
-  width:500px;
-}
-
-.answerLayout {
-  position:absolute;
-  bottom:-1750px;
-  left:100px;
-  width:200px;
-  height:80px;
+  margin:30px auto 0;
+  max-width:500px;
+  text-align: center;
 }
 
 #button {
   width:200px;
   height:80px;
   font-size:20px;
+  font-weight: bold;
   color:#ffffff;
   background-color:#73d2ce;
   border: 0;
-  margin: 0 auto 30px;
+  margin: 30px auto 0;
   display: block;
 }

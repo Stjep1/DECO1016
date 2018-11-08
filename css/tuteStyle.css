@@ -276,14 +276,14 @@ body, html {
   height:50px;
   padding:0px;
   background-color:#111;
-  position:absolute;
-  left:770px;
-  bottom:500px;
+  margin: 0 auto;
+  position:relative;
+  bottom:-50px;
+
 }
 
 .resText {
-  position:absolute;
-  top:10%;
+  top:30%;
   width:100%;
   text-align:center;
   color:#ffffff;

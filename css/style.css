@@ -20,7 +20,7 @@ body{
   height:200px;
   position:absolute;
   bottom:100px;
-  left:200px;
+  left:100px;
 }
 
 .titleTute2{
@@ -29,7 +29,7 @@ body{
   height:200px;
   position:absolute;
   bottom:100px;
-  left:600px;
+  left:400px;
 }
 
 .titleTute3{
@@ -38,7 +38,7 @@ body{
   height:200px;
   position:absolute;
   bottom:100px;
-  left:1000px;
+  right:390px;
 }
 
 .titleQuiz{
@@ -47,7 +47,7 @@ body{
   height:200px;
   position:absolute;
   bottom:100px;
-  left:1400px;
+  right:100px;
 }
 
 .titleBox {
@@ -56,7 +56,7 @@ body{
   padding:0px;
   background-color:#666;
   position:absolute;
-  left:600px;
+  left:300px;
   opacity:0.8;
   top:70px;
 }

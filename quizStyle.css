@@ -16,15 +16,7 @@ body, html {
   color:#666;
 }
 
-.quizBox {
-  width:600px;
-  height:2800px;
-  margin:0px auto;
-  background-color:#73d2ce;
-  position:relative;
-  bottom:2870px;
-  z-index:-1;
-}
+
 
 #after_submit {
   visibility: hidden;
@@ -38,20 +30,45 @@ body, html {
 }
 
 .answerLayout {
-  position:absolute;
-  bottom:-1750px;
-  left:100px;
+  position:relative;
+  bottom:150px;
+  right:-900px;
   width:200px;
   height:80px;
 }
 
 #button {
-  position:absolute;
-  bottom:-1685px;
-  left:85px;
+  position:relative;
+  bottom:200px;
+  right:-500px;
   width:200px;
   height:80px;
   font-size:20px;
   color:#ffffff;
   background-color:#73d2ce;
+}
+
+.homeBox {
+  width:300px;
+  height:70px;
+  padding:0px;
+  background-color:#666;
+  position:relative;
+  left:500px;
+  opacity:0.9;
+  top:50px;
+}
+
+.homeText{
+  position:absolute;
+  top:30%;
+  width:100%;
+  text-align:center;
+  color:#ffffff;
+  font-size:20px;
+  font-family:"Lato",sans-serif;
+  font-weight:600;
+  line-height:1.5em;
+  letter-spacing:8px;
+  text-transform:uppercase;
 }

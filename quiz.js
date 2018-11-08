@@ -79,5 +79,6 @@ function checkAnswers(){
   document.getElementById("message").innerHTML=messages[range];
   document.getElementById("number_correct").innerHTML="You got " + correct + " correct.";
 
-
+  // scroll to bottom of page, so feedback is visible
+  window.scrollTo(0,document.body.scrollHeight);
 }

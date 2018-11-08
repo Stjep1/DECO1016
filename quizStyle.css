@@ -24,9 +24,6 @@ body, html {
   position:relative;
   bottom:2870px;
   z-index:-1;
-
-
-
 }
 
 #after_submit {
@@ -34,8 +31,27 @@ body, html {
   font-size:20px;
   font-family:"Lato",sans-serif;
   font-weight:600;
-  line-height:1.8em;
+  line-height:1.0em;
   color:#666;
   margin:0 auto;
   width:500px;
+}
+
+.answerLayout {
+  position:absolute;
+  bottom:-1750px;
+  left:100px;
+  width:200px;
+  height:80px;
+}
+
+#button {
+  position:absolute;
+  bottom:-1685px;
+  left:85px;
+  width:200px;
+  height:80px;
+  font-size:20px;
+  color:#ffffff;
+  background-color:#73d2ce;
 }
